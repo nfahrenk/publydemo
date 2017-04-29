@@ -2,3 +2,4 @@
 myenv/
 *.pyc
 publy/apikeys.py
+staticfiles/*
