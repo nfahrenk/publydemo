@@ -111,7 +111,6 @@ USE_TZ = True
 
 
 import os
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Database
 # https://docs.djangoproject.com/en/1.9/ref/settings/#databases
@@ -139,12 +138,15 @@ else:
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-if IS_PRODUCTION:
-    STATIC_URL = 'http://publy.nickfahrenkrog.me/static/'
-    STATIC_ROOT = '/home/nick/diy/publy/publy/static/'
-else:
-    STATIC_URL = '/static/'
-    STATICFILES_DIRS = (
-        os.path.join(BASE_DIR, "static"),
-        '/var/www/static/',
-    )
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+)
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
