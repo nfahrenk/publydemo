@@ -1,0 +1,158 @@
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
+	<!--
+		Spatial by TEMPLATED
+		templated.co @templatedco
+		Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+	-->
+<html>
+	<head>
+		<title>Publy Inc</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="shortcut icon" href="{% static 'images/favicon.ico' %}">
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<script src="{% static 'js/jquery.min.js' %}"></script>
+		<script src="{% static 'js/skel.min.js' %}"></script>
+		<script src="{% static 'js/skel-layers.min.js' %}"></script>
+		<script src="{% static 'js/init.js' %}"></script>
+		<script src="{% static 'js/interactivity.js' %}"></script>
+		<script src="{% static 'js/html5shiv.min.js' %}"></script>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+		<link rel="stylesheet" href="{% static 'css/myStyles.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/skel.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+		<link rel="stylesheet" href="{% static 'css/style-xlarge.css' %}" />
+	</head>
+	<body class="landing">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1><strong><a href="javascript:void(0)">Publy</a> Inc.</strong></h1>
+		</header>
+
+		<!-- Banner -->
+		<section id="banner">
+			<h2>Publy</h2>
+			<p>Publy is an opt-in analytics service for bars on the up and up.</p>
+			<ul class="actions">
+				<!-- <li><a href="sign-up.html" class="button special big">Get Started</a></li> -->
+			</ul>
+
+			<input type="text" id="searchBar" placeholder="ZipCode" required>
+			<input type="button" id="searchPad" value="Search" background-color="blue">
+			<div class="searchArea">
+				<div class="leftSearchExtra">
+					<label id="label-cmn" for="cmn-toggle-1">Use Demo?</label>
+					<input id="cmn-toggle-1" type="checkbox">
+				</div>
+				<div class="rightSearchExtra">
+					<select id="hours" name="hours" class="time">
+						<option value="20">8</option>
+						<option value="21">9</option>
+						<option value="22">10</option>
+						<option value="23">11</option>
+						<option value="0">12</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+					</select>
+					<span>Hour</span>
+					<select id="mins" name="mins" class="time">
+						<option value="0">0</option>
+						<option value="20">20</option>
+						<option value="40">40</option>
+					</select>
+					<span>Minute</span>
+				</div>
+			</div>
+		</section>
+
+		<section id="one" class="wrapper style1">
+			<div id="ourList">
+				<ul id="searchResults">
+				</ul>
+			</div>
+		</section>
+			<!-- Three -->
+		<section id="three" class="wrapper style1">
+			<div class="container">
+				<header class="major special">
+					<h2>Meet the Team</h2>
+					<p>We're AMAZING</p>
+				</header>
+				<div class="feature-grid">
+					<div class="feature">
+						<div class="image rounded"><img src="{% static 'images/Nick.jpg' %}" alt="" /></div>
+						<div class="content">
+							<header>
+								<h4>Nick Fahrenkrog</h4>
+								<p>Class of 2018</p>
+							</header>
+							<p>Hackathon enthusiast, avid reader of tech founder biographies, and strong believer in treating coding as an art.</p>
+						</div>
+					</div>
+					<div class="feature">
+						<div class="image rounded"><img src="{% static 'images/Sean2.jpg' %}" alt="" /></div>
+						<div class="content">
+							<header>
+								<h4>Sean Oliver</h4>
+								<p>Class of 2016</p>
+							</header>
+
+							<p>I'm an electrical engineer with interests in digital signal processing and embedded systems. Go Jackets.</p>
+						</div>
+					</div>
+					<!--
+					<div class="feature">
+						<div class="image rounded"><img src="{% static 'images/Page.jpg' %}" alt="" /></div>
+						<div class="content">
+							<header>
+								<h4>Kenneth "Page" Swanson</h4>
+								<p>Class of 2017</p>
+							</header>
+							<p>I'm a Computer Engineering major at Georgia Tech interested in the intersection of art, engineering, and software. Endeavors include an electronic trombone and a woodwind based synthesizer controller.</p>
+						</div>
+					</div>
+					-->
+					<div class="feature">
+						<div class="image rounded"><img src="{% static 'images/Prashanth.jpg' %}" alt="" /></div>
+						<div class="content">
+							<header>
+								<h4>Prashanth Collapancheri</h4>
+								<p>Class of 2017</p>
+							</header>
+							<p>Sports fanatic first, and hacker second. Interested in back-end web development and embedded systems.</p>
+						</div>
+					</div>
+					<div class="feature">
+						<div class="image rounded"><img src="{% static 'images/Dave.png' %}" alt="" /></div>
+						<div class="content">
+							<header>
+								<h4>Dave Isaacs</h4>
+								<p>Mentor</p>
+							</header>
+							<p>Boss of Prashanth and boss at engineering.</p>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<p><strong>Intrigued??? Check out how it all works</strong></p>
+				<a href="https://github.com/syntactix/publy">
+					<img src="{% static 'images/GitHub-Mark-64px.png' %}" width="" height="">
+				</a>
+			</div>
+		</footer>
+		<script>
+			window.zipcode = "{{zipcode|default_if_none:'' }}";
+			window.hours = "{{hours|default_if_none:'' }}";
+			window.mins = "{{mins|default_if_none:'' }}";			
+		</script>
+	</body>
+</html>

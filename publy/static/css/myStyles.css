@@ -1,0 +1,123 @@
+
+#searchBar {
+	width: 500px;
+	max-width: 90%;
+	margin: 0 auto;
+	display: inline;
+    color: white;
+}
+
+#searchPad {
+	margin: 5px;    
+}
+.switch {
+    display: inline-block;
+}
+.leftSearchExtra {
+    display: inline-block;
+    padding: 0 20px;
+    
+}
+label {    
+    color: white !important;
+}
+label:hover {
+    cursor: pointer;
+}
+.time {
+    display: inline-block;
+    width: 100px;
+}
+.searchArea {
+    display: block;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+	#searchPad {
+	width: 88px;
+	}
+}
+#searchResults > a {
+    max-width: 95%;
+}
+.card {
+    margin: 30px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #f6f6f6;
+    width: 600px;
+    max-width: 90%;
+    border: solid 2px #f1f1f1;
+    text-align: center;
+}
+.header-graph {
+    padding: 10px 0;
+}
+.graph {
+    margin: 0 auto;
+    width: 300px;
+    max-width: 85%;
+}
+.line-graph {
+    margin: 0 auto;
+    width: 500px;
+    max-width: 85%;
+}
+
+#searchResults > a > li > h3 {
+    display: inline-block;
+    float: left;
+}
+#searchResults > a > li > i {
+    display: inline-block;
+    float: right;
+}
+
+/* LIST #4 */
+#list4 { width:320px; font-family:Georgia, Times, serif; font-size:15px; margin: 0 auto;}
+#list4 ul { list-style: none; }
+#list4 ul li { }
+#list4 ul li a { display:block; text-decoration:none; color:#000000; background-color:#FFFFFF; line-height:30px;
+  border-bottom-style:solid; border-bottom-width:1px; border-bottom-color:#CCCCCC; padding-left:10px; cursor:pointer; }
+#list4 ul li a:hover { color:#FFFFFF; background-image:url(../images/hover.png); background-repeat:repeat-x; }
+#list4 ul li a strong { margin-right:10px; }
+
+
+#ourList * {margin: 0; padding: 0; 	margin: 0 auto;
+}
+ 
+#ourList div {
+  margin: 20px;
+}
+ 
+#ourList ul {
+  list-style-type: none;
+  width: 500px;
+}
+ 
+#ourList h3 {
+  font: bold 20px/1.5 Helvetica, Verdana, sans-serif;
+}
+ 
+ #ourList li img {
+  float: left;
+  margin: 0 15px 0 0;
+}
+ 
+#ourList li p {
+  font: 200 12px/1.5 Georgia, Times New Roman, serif;
+}
+ 
+#ourList li {
+  padding: 10px;
+  overflow: auto;
+}
+ 
+#ourList li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+
+

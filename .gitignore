@@ -1,0 +1,4 @@
+.DS_Store
+myenv/
+*.pyc
+publy/apikeys.py
