@@ -1,4 +1,5 @@
-import django
+import django, os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "publy.settings")
 django.setup()
 
 import random
