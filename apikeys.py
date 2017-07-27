@@ -1,3 +1,0 @@
-LOCAL_DB_USER = "postgres"
-LOCAL_DB_PASSWORD = "Allat1ce!"
-IS_PRODUCTION = False
